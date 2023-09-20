@@ -4,11 +4,16 @@ Blocking macOS 14 Sonoma installer
 
 Detect when `Install macOS Sonoma.app` installer application has launched, terminate the process and display an alert.
 
-![sonomablocker](screenshot.png)
-
-_This project is totally copied from the original bigsurblocker from which I made montereyblocker, then venturablocker, and now also sonomablocker._
+_This project is totally copied from the original `bigsurblocker` from which I made `montereyblocker`, then `venturablocker`, and now also `sonomablocker`._
 
 _See [hjuutilainen/bigsurblocker](https://github.com/hjuutilainen/bigsurblocker) for the original software for blocking Big Sur and README there._
+
+## Why
+
+Apple wants end users to upgrade to the latest macOS as soon as it becomes available. Depending on the software and policies your organization uses, this might be unacceptable. As an administrator, you currently have some options:
+
+- Use an MDM to push a profile to delay updates for maximum of 90 days. This will however postpone _all_ updates, not just the macOS upgrade.
+- Push 
 
 ## How
 
@@ -16,7 +21,7 @@ The `sonomablocker` binary is installed in `/usr/local/bin` and is launched for 
 
 By design, it will _not_ block the `startosinstall` command line tool.
 
-__If you want to delay the installation of macOS Sonoma, through the Apple update/upgrade mechanism you need to deploy a profile to delay that.__
+__This app only block the app installer, so in order to prevent the users from upgrading through the Software Update mechanisms, a management profile to delay major upgrades has to be deployed to the machines. Remember that is limited to 90 days__
 
 ## Requirements
 
@@ -26,7 +31,9 @@ The binary requires at least macOS 11.
 
 All configuration is optional.
 
-[Management profile for making sure Blocker is not disabled by the user](Management-profiles/sonomablocker profile.mobileconfig)
+Management profile for making sure [Blocker is not disabled by the user](Management profiles/sonomablocker profile.mobileconfig) (for MDM systems.)
+
+Profile for [custom Blocker alert settings](Management profiles/dk.envo-it.sonomablocker.plist) (deployed as custom settings in a MDM system.)
 
 ## Installation
 
@@ -39,6 +46,8 @@ To fully uninstall `sonomablocker`, run the script [sonomablocker-remove.sh](son
 ## License
 
 Sonoma Blocker is licensed under [the MIT License](LICENSE).
+
+
 
 
 The rest of this README is from that original project:
