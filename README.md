@@ -16,13 +16,17 @@ The `sonomablocker` binary is installed in `/usr/local/bin` and is launched for 
 
 By design, it will _not_ block the `startosinstall` command line tool.
 
+__If you want to delay the installation of macOS Sonoma, through the Apple update/upgrade mechanism you need to deploy a profile to delay that.__
+
 ## Requirements
 
 The binary requires at least macOS 11.
 
-## Configuration
+## Management profiles
 
-All configuration is optional. If needed, the alert title and text can be set through a configuration profile. Use `dk.envo-it.sonomablocker` as the domain and `AlertTitle` and `AlertText` as the keys.
+All configuration is optional.
+
+[Management profile for making sure Blocker is not disabled by the user](Management-profiles/sonomablocker profile.mobileconfig)
 
 ## Installation
 
