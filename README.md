@@ -1,8 +1,10 @@
-# Blocking macOS 14 Sonoma installer (`sonomablocker`)
+# Sonoma Blocker
+
+Blocking macOS 14 Sonoma installer
 
 Detect when `Install macOS Sonoma.app` installer application has launched, terminate the process and display an alert.
 
-![sonomablocker](https://raw.githubusercontent.com/Theile/sonomablocker/main/screenshot.png)
+![sonomablocker](screenshot.png)
 
 _This project is totally copied from the original bigsurblocker from which I made montereyblocker, then venturablocker, and now also sonomablocker._
 
