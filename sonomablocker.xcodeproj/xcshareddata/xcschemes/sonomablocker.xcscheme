@@ -17,7 +17,7 @@
                BlueprintIdentifier = "265C516E253C6D6700D868C4"
                BuildableName = "sonomablocker"
                BlueprintName = "sonomablocker"
-               ReferencedContainer = "container:venturablocker.xcodeproj">
+               ReferencedContainer = "container:sonomablocker.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -48,7 +48,7 @@
             BlueprintIdentifier = "265C516E253C6D6700D868C4"
             BuildableName = "sonomablocker"
             BlueprintName = "sonomablocker"
-            ReferencedContainer = "container:venturablocker.xcodeproj">
+            ReferencedContainer = "container:sonomablocker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -65,7 +65,7 @@
             BlueprintIdentifier = "265C516E253C6D6700D868C4"
             BuildableName = "sonomablocker"
             BlueprintName = "sonomablocker"
-            ReferencedContainer = "container:venturablocker.xcodeproj">
+            ReferencedContainer = "container:sonomablocker.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
