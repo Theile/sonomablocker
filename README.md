@@ -31,9 +31,9 @@ The binary requires at least macOS 11.
 
 All configuration is optional.
 
-Management profile for making sure [Blocker is not disabled by the user](Management profiles/sonomablocker profile.mobileconfig) (for MDM systems.)
+Management profile for making sure [Blocker is not disabled by the user](Management%20profiles/sonomablocker%20profile.mobileconfig) (for MDM systems.)
 
-Profile for [custom Blocker alert settings](Management profiles/dk.envo-it.sonomablocker.plist) (deployed as custom settings in a MDM system.)
+Profile for [custom Blocker alert settings](Management%20profiles/dk.envo-it.sonomablocker.plist) (deployed as custom settings in a MDM system.)
 
 ## Installation
 
@@ -41,11 +41,11 @@ On macOS 11 and later, download a prebuilt package from the [Releases page](rele
 
 ## Uninstall
 
-To fully uninstall `sonomablocker`, run the script [sonomablocker-remove.sh](sonomablocker-remove.sh) (as root or with `sudo`) or deploy through MDM.
+To fully uninstall `sonomablocker`, run the script `[sonomablocker-remove.sh](sonomablocker-remove.sh)` (as root or with `sudo`) or deploy through MDM.
 
 ## License
 
-Sonoma Blocker is licensed under [the MIT License](LICENSE).
+Sonoma Blocker is licensed under [the MIT License](LICENSE), just as the original software.
 
 
 
