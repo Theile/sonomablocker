@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>AlertTitle</key>
+    <string>macOS 14 Sonoma installation prohibited</string>
+    <key>AlertText</key>
+    <string>We do not currently support macOS 14 Sonoma in our configurations, so it has been blocked for installation until further notice.</string>
+  </dict>
+</plist>
