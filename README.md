@@ -1,4 +1,4 @@
-# Blocking macOS 14 Sonoma installer (sonomablocker)
+# Blocking macOS 14 Sonoma installer (`sonomablocker`)
 
 Detect when `Install macOS Sonoma.app` installer application has launched, terminate the process and display an alert.
 
@@ -6,26 +6,33 @@ Detect when `Install macOS Sonoma.app` installer application has launched, termi
 
 _This project is totally copied from the original bigsurblocker from which I made montereyblocker, then venturablocker, and now also sonomablocker._
 
-To fully uninstall `sonomablocker`, run the script [sonomablocker-remove.sh](sonomablocker-remove.sh) (as root or with `sudo`) or deploy through MDM.
-
 _See [hjuutilainen/bigsurblocker](https://github.com/hjuutilainen/bigsurblocker) for the original software for blocking Big Sur and README there._
 
 ## How
-
-Below Releases a pkg can be foun
 
 The `sonomablocker` binary is installed in `/usr/local/bin` and is launched for each user through a launch agent. This means that the binary is running in the user session and therefore has the privileges of the current user. It runs silently in the background and listens for app launch notifications. As soon as the user launches the macOS installer application, the binary (forcefully) terminates it and displays a warning message.
 
 By design, it will _not_ block the `startosinstall` command line tool.
 
-# Requirements
+## Requirements
 
-The binary requires at least macOS 10.9, however it has been tested only on macOS 10.10, 10.11, 10.12, 10.13, 10.14 and 10.15.
+The binary requires at least macOS 11.
 
-# Configuration
+## Configuration
 
 All configuration is optional. If needed, the alert title and text can be set through a configuration profile. Use `dk.envo-it.sonomablocker` as the domain and `AlertTitle` and `AlertText` as the keys.
 
+## Installation
+
+On macOS 11 and later, download a prebuilt package from the [Releases page](releases) and deploy with your favorite method. The package is signed and notarized.
+
+## Uninstall
+
+To fully uninstall `sonomablocker`, run the script [sonomablocker-remove.sh](sonomablocker-remove.sh) (as root or with `sudo`) or deploy through MDM.
+
+## License
+
+Sonoma Blocker is licensed under [the MIT License](LICENSE).
 
 
 The rest of this README is from that original project:
