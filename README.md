@@ -1,4 +1,4 @@
-# Sonoma Blocker
+# Blocking macOS 14 Sonoma installer (sonomablocker)
 
 Detect when `Install macOS Sonoma.app` installer application has launched, terminate the process and display an alert.
 
@@ -10,8 +10,27 @@ To fully uninstall `sonomablocker`, run the script [sonomablocker-remove.sh](son
 
 _See [hjuutilainen/bigsurblocker](https://github.com/hjuutilainen/bigsurblocker) for the original software for blocking Big Sur and README there._
 
+## How
+
+Below Releases a pkg can be foun
+
+The `sonomablocker` binary is installed in `/usr/local/bin` and is launched for each user through a launch agent. This means that the binary is running in the user session and therefore has the privileges of the current user. It runs silently in the background and listens for app launch notifications. As soon as the user launches the macOS installer application, the binary (forcefully) terminates it and displays a warning message.
+
+By design, it will _not_ block the `startosinstall` command line tool.
+
+# Requirements
+
+The binary requires at least macOS 10.9, however it has been tested only on macOS 10.10, 10.11, 10.12, 10.13, 10.14 and 10.15.
+
+# Configuration
+
+All configuration is optional. If needed, the alert title and text can be set through a configuration profile. Use `dk.envo-it.sonomablocker` as the domain and `AlertTitle` and `AlertText` as the keys.
+
+
 
 The rest of this README is from that original project:
+
+# Original README
 
 This project is heavily inspired by Erik Berglund's [AppBlocker](https://github.com/erikberglund/AppBlocker). It uses the same underlying idea of registering and listening for NSWorkspace notifications when app has started up and then checking the CFBundleIdentifier of the launched app to identify a Big Sur installer launch.
 
