@@ -5,10 +5,12 @@ if [[ $3 != "/" ]]; then
 fi
 
 launchd_item_path="/Library/LaunchAgents/dk.envo-it.sonomablocker.plist"
+
 current_user_uid=$( echo "show State:/Users/ConsoleUser" | scutil | awk '/UID :/ && ! /loginwindow/ { print $3 }' )
 
+chmod 644 "${launchd_item_path}"
 launchctl bootout gui/${current_user_uid} "${launchd_item_path}" > /dev/null 2>&1
-chmod 755 "${launchd_item_path}"
 launchctl bootstrap gui/${current_user_uid} "${launchd_item_path}"
+#launchctl load gui/${current_user_uid} "${launchd_item_path}"
 
 exit 0
