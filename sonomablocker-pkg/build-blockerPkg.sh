@@ -4,7 +4,7 @@
 
 # package
 pkgname="sonomablocker"
-version="20230920"
+version="20230921"
 identifier="dk.envo-it.${pkgname}"
 install_location="/"
 signature="Developer ID Installer: ENVO IT AS (FXW6QXBFW5)"
@@ -34,6 +34,7 @@ pkgbuild --root "${payloadfolder}" \
 # NOTE: build the product archive
 
 productpath="${dir}/${pkgname}-${version}.pkg"
+echo "# Generating ${productpath}"
 
 productbuild --package "${pkgpath}" \
 			 --version "${version}" \

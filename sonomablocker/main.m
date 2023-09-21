@@ -44,6 +44,7 @@
             bundleIDsToBlock = @[
                 @"com.apple.InstallAssistant.Sonoma",
                 @"com.apple.InstallAssistant.macOSSonoma",
+                @"com.apple.InstallAssistant.Seed.macOS14Seed",
                 @"com.apple.InstallAssistant.Seed.macOS14Seed1",
             ];
         }
