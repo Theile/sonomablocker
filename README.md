@@ -14,10 +14,11 @@ _See [hjuutilainen/bigsurblocker](https://github.com/hjuutilainen/bigsurblocker)
 
 ## Why
 
-Apple wants end users to upgrade to the latest macOS as soon as it becomes available. Depending on the software and policies your organization uses, this might be unacceptable. As an administrator, you currently have some options:
+Apple wants end users to upgrade to the latest macOS as soon as it becomes available. Depending on the software and policies your organization uses, this might be unacceptable. Apple is limiting the options, and now we basically only have this solution left, if users are admins on their computer:
 
 - Use an MDM to push a profile to delay updates for maximum of 90 days. This will however postpone _all_ updates, not just the macOS upgrade.
 
+But this option does not prevent users from downloading the full installer, and run that to upgrade their system, and this is where Sonoma Blocker fits in.
 
 ## How
 
