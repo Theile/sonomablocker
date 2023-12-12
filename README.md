@@ -8,12 +8,16 @@ _This project is totally copied from the original `bigsurblocker` from which I m
 
 _See [hjuutilainen/bigsurblocker](https://github.com/hjuutilainen/bigsurblocker) for the original software for blocking Big Sur and README there._
 
+## Guide available
+
+[HCS Technology Group](https://hcsonline.com) has made a guide available on how to set this up. [Read it here](https://docs.hcsonline.com/SonomaBlocker).
+
 ## Why
 
 Apple wants end users to upgrade to the latest macOS as soon as it becomes available. Depending on the software and policies your organization uses, this might be unacceptable. As an administrator, you currently have some options:
 
 - Use an MDM to push a profile to delay updates for maximum of 90 days. This will however postpone _all_ updates, not just the macOS upgrade.
-- Push 
+
 
 ## How
 
