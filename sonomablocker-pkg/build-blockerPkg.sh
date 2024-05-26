@@ -4,7 +4,7 @@
 
 # package
 pkgname="sonomablocker"
-version="$(date +%Y%m%d)"#"20230921"
+version="20230921"
 identifier="dk.envo-it.${pkgname}"
 install_location="/"
 signature="Developer ID Installer: ENVO IT AS (FXW6QXBFW5)"
